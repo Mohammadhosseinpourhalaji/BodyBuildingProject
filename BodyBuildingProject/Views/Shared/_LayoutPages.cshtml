@@ -1,0 +1,223 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bodybuilding</title>
+    <meta name="author" content="iThemesLab">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="~/layout/assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="~/layout/assets/favicon/apple-icon-57x57.html">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/layout/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/layout/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="~/layout/assets/favicon/apple-icon-144x144.png">
+
+    <!--All Css Here-->
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/bootstrap.min.css">
+    <!--revolution slider-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/rev_slider/settings.css">
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/rev_slider/navigation.css">
+    <!--Font-Awesome Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/font-awesome.min.css">
+    <!--flat-icon-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/flaticon.css">
+    <!--Owl-Carousel Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/owl.carousel.css">
+    <!--Animate Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/animate.css">
+    <!--Animate Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/magnific-popup.css">
+    <!--Jquery Ui Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/jquery-ui.min.css">
+    <!--Style Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/style.css">
+    <!--Responsive Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/responsive.css">
+    <!--Modernizr Css-->
+    <script src="~/layout/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+    <style>
+        input {
+            text-align: right
+        }
+
+        textarea {
+            text-align: right
+        }
+    </style>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    @if (TempData["msg"] != null)
+    {
+        <div class="modal" tabindex="-1" role="dialog" id="divModalShowMessage">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" style="color:black">پیام سیستم</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="color:black; text-align:right">
+                        @TempData["msg"]
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                $(divModalShowMessage).modal();
+            })
+        </script>
+    }
+    <div class="main-container">
+
+        <!-- /.header start -->
+        <partial name="~/Views/Shared/_HeaderNavbarFixed.cshtml">
+            <!--header end-->
+            <!-- page title & breadcrumbs start -->
+            @{
+                string randbg = "";
+                switch (new Random().Next(0, 6))
+                {
+                    case 0:
+                        randbg = "booking-bg";
+                        break;
+                    case 1:
+                        randbg = "shop-bg";
+                        break;
+                    case 2:
+                        randbg = "about-bg";
+                        break;
+                    case 3:
+                        randbg = "checkout-bg";
+                        break;
+                    case 4:
+                        randbg = "contact-bg";
+                        break;
+                    case 5:
+                        randbg = "error-bg";
+                        break;
+                    case 6:
+                        randbg = "shop-cart-bg";
+                        break;
+                    default:
+                        break;
+                }
+            }
+            <div class="@randbg page-head parallax overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title text-center">
+                                <h3>@(ViewData["Title"] != null ? ViewData["Title"] as string : "TEMP")</h3>
+                            </div>
+                        </div>
+                        <!-- /.colour-service-1-->
+                        <div class="col-md-12">
+                            <ol class="breadcrumb">
+                                <li><a href="/">خانه</a></li>
+                                <li>-</li>
+                                <li>@(ViewData["Title"] != null ? ViewData["Title"] as string : "TEMP")</li>
+                            </ol>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.page-header -->
+            <!-- page title & breadcrumbs end -->
+            <!--contact-area start-->
+            @RenderBody()
+            <!--contact-area end-->
+
+            <partial name="~/Views/Shared/_Footer.cshtml">
+    </div>
+
+    <!--Search Popup-->
+    <div id="search-popup" class="search-popup">
+        <div class="close-search theme-btn"><span class="fa fa-close"></span></div>
+        <div class="popup-inner">
+
+            <div class="search-form">
+                <form method="post" action="#">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required>
+                            <input type="submit" value="Search" class="theme-btn">
+                        </fieldset>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!--End Search Popup-->
+    <!--All Js Here-->
+    <!-- jquery latest version -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="~/layout/assets/js/vendor/jquery-3.2.1.min.js"></script>
+    <!--Migrate Js-->
+    <script src="~/layout/assets/js/vendor/jquery-migrate.js"></script>
+    <!--Popper Js-->
+    <script src="~/layout/assets/js/vendor/popper-1.12.3.min.js"></script>
+    <!--Bootstrap Js-->
+    <script src="~/layout/assets/js/vendor/bootstrap.min.js"></script>
+    <!--Owl-Carousel Js-->
+    <script src="~/layout/assets/js/vendor/owl.carousel.min.js"></script>
+    <!--counter Js-->
+    <script src="~/layout/assets/js/vendor/jquery.counterup.min.js"></script>
+    <script src="~/layout/assets/js/vendor/waypoints-jquery.js"></script>
+    <!--Isotop Js-->
+    <script src="~/layout/assets/js/vendor/isotope.pkgd.min.js"></script>
+
+    <!-- revolution slider js files start -->
+    <script src="~/layout/assets/js/vendor/rev_slider/jquery.themepunch.tools.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/jquery.themepunch.revolution.min.js"></script>
+
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.actions.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.migration.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.video.min.js"></script>
+    <!-- revolution slider js files end -->
+    <!--magnific popup Js-->
+    <script src="~/layout/assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <!--scrollUp js-->
+    <script src="~/layout/assets/js/vendor/jquery.scrollUp.js"></script>
+    <!--Jquery Ui Js-->
+    <script src="~/layout/assets/js/vendor/jquery-ui.min.js"></script>
+    <!--Wow Js-->
+    <script src="~/layout/assets/js/vendor/wow.min.js"></script>
+
+    <!-- template main js file -->
+    <script src="~/layout/assets/js/main.js"></script>
+</body>
+</html>

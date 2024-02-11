@@ -1,0 +1,144 @@
+﻿@{
+    Layout = "_LayoutPages";
+}
+@model RequestScheduleViewModel
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+<div class="contact-area ctc-form1 pad90">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <div class="title-bar full-width mb20">
+                        <img src="assets/images/logo/ttl-bar.png" alt="title-img">
+                    </div>
+                    <h3>درخواست برنامه</h3>
+                    <p>@*push harder than yesterday if you want a different tommorrow*@ </p>
+                </div>
+            </div>
+            <!-- /.col -->
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                @*<div class="booking-schedule">
+                        <ul>
+                            <li><i class="fa fa-calendar"></i>monday to wednesday</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                            <li><i class="fa fa-calendar"></i>monday to wednesday</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                        </ul>
+                    </div>*@
+            </div>
+            <style>
+                .field-validation-error {
+                    color: red;
+                }
+            </style>
+            <div class="col-md-8">
+                <div class="contact-form ">
+                    <div class="appointment-schedule">
+                        <form asp-action="RequestScheduleConfirm" asp-controller="Train" class="appointment-form text-right" dir="rtl">
+                            <p class="container"> کاربر محترم، لطفاً تمام پارامتر هارا به دقت وارد کنید</p>
+                            <p class="container"> توجه: تمام پارامتر ها به سانتی متر وارد کنید</p>
+                            <p class="container"> توجه: اعداد اعشاری قابل قبول است</p>
+
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <label style="color:black; margin-right: 10px">قد:</label>
+                                    <input type="text" placeholder="قد" class="form-control" asp-for="Height">
+                                    <span asp-validation-for="Height"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <label style="color:black; margin-right: 10px">وزن:</label>
+                                    <input type="text" placeholder="وزن" class="form-control" asp-for="Weight">
+                                    <span asp-validation-for="Weight"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <label style="color:black; margin-right: 10px">سن:</label>
+                                    <input type="text" placeholder="سن" class="form-control" asp-for="Age">
+                                    <span asp-validation-for="Age"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <label style="color:black; margin-right: 10px">دور کمر:</label>
+                                    <input type="text" placeholder="دور کمر" class="form-control" asp-for="Waist">
+                                    <span asp-validation-for="Waist"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <label style="color:black; margin-right: 10px">دور مچ:</label>
+                                    <input type="text" placeholder="دور مچ" class="form-control" asp-for="Bracer">
+                                    <span asp-validation-for="Bracer"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <label style="color:black; margin-right: 10px">دور سینه:</label>
+                                    <input type="text" placeholder="دور سینه" class="form-control" asp-for="Chest">
+                                    <span asp-validation-for="Chest"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <label style="color:black; margin-right: 10px">دور بازو:</label>
+                                    <input type="text" placeholder="دور بازو" class="form-control" asp-for="Arm">
+                                    <span asp-validation-for="Arm"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <label style="color:black; margin-right: 10px">دور ران:</label>
+                                    <input type="text" placeholder="دور ران" class="form-control" asp-for="Thighs">
+                                    <span asp-validation-for="Thighs"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <label style="color:black; margin-right: 10px">توضیحات (اختیاری):</label>
+                                    <input type="text" placeholder="توضیحات (اختیاری)" class="form-control" asp-for="Comment">
+                                    <span asp-validation-for="Comment"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <label style="color:black; margin-right: 10px">برنامه ورزشی:</label>
+                                    <select class="form-control" asp-for="TrainTypeId">
+                                        <option selected disabled value="0">-- انتخاب نوع برنامه ورزشی --</option>
+                                        @foreach (var item in ViewData["TypesList"] as List<TrainType>)
+                                        {
+                                            <option value="@item.Id">@item.TypeName</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="bttn full-width mt10">
+                                    <button type="submit" class="btn full-width active btn-primary">ثبت درخواست</button>
+                                </div>
+                            </div>
+                            <!-- /.col -->
+                            <!-- /.row -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col -->
+            <!-- /.col-->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</div>

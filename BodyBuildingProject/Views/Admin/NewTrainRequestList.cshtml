@@ -1,0 +1,70 @@
+﻿
+@{
+    Layout = "_LayoutAdmin";
+}
+@{
+    PersianCalendar pcal = new PersianCalendar();
+    Thread.CurrentThread.CurrentCulture = new CultureInfo("fa-IR");
+}
+
+<div class="col-12 mb-30">
+    <div class="box">
+        <div class="box-head">
+            <h4 class="title">لیست درخواست تمرینات جدید</h4>
+        </div>
+        <div class="box-body">
+            <div class="jsgrid" style="position: relative; height: 610px; width: 100%;">
+                <div class="jsgrid-grid-body" style="height: 465px;">
+                    <table class="jsgrid-table">
+                        <thead class="jsgrid-grid-header jsgrid-header-scrollbar">
+                            <tr class="jsgrid-header-row">
+                                <th style="width: 50px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">ای‌دی</th>
+                                <th style="width: 100px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">نام و نام‌خانوادگی</th>
+                                <th style="width: 70px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">نام کاربری</th>
+                                <th style="width: 120px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">تاریخ</th>
+                                <th style="width: 50px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">سن</th>
+                                <th style="width: 70px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">قد</th>
+                                <th style="width: 50px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">وزن</th>
+                                <th style="width: 60px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">دور کمر</th>
+                                <th style="width: 60px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">دور سینه</th>
+                                <th style="width: 60px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">دور مچ</th>
+                                <th style="width: 60px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">دور بازو</th>
+                                <th style="width: 70px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">دور ران پا</th>
+                                <th style="width: 100px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">نوع</th>
+                                <th style="width: 100px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">پرداخت</th>
+                                <th style="width: 50px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">نوشتن برنامه</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in ViewData["RequestList"] as List<TrainSchedule>)
+                            {
+                                <tr class="jsgrid-row">
+                                    <td style="width: 50px;" class="jsgrid-cell jsgrid-align-right">@item.Id</td>
+                                    <td style="width: 100px;" class="jsgrid-cell jsgrid-align-right">@item.User.FirstName @item.User.LastName</td>
+                                    <td style="width: 70px;" class="jsgrid-cell jsgrid-align-center">@item.User.UserName</td>
+                                    <td style="width: 150px;" class="jsgrid-cell jsgrid-align-center">
+                                        @($"{pcal.GetYear(item.DateAdded)}/{pcal.GetMonth(item.DateAdded).ToString("00")}/{pcal.GetDayOfMonth(item.DateAdded).ToString("00")} - {item.DateAdded.Hour.ToString("00")}:{item.DateAdded.Minute.ToString("00")}")
+                                    </td>
+                                    <td style="width: 50px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Age</td>
+                                    <td style="width: 70px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Height</td>
+                                    <td style="width: 50px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Weight</td>
+                                    <td style="width: 60px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Waist</td>
+                                    <td style="width: 60px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Chest</td>
+                                    <td style="width: 60px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Bracer</td>
+                                    <td style="width: 60px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Arm</td>
+                                    <td style="width: 70px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Thighs</td>
+                                    <td style="width: 100px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.TrainType.TypeName</td>
+                                    <td style="width: 100px;" class="jsgrid-cell jsgrid-align-center">@item.isPaid</td>
+                                    <td style="width: 50px;" class="jsgrid-cell jsgrid-align-center">
+                                        <a class="edit button button-box button-xs button-info" href="/Admin/TrainSetSchedule/@item.Id"><i class="zmdi zmdi-edit"></i></a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                @*<div class="jsgrid-pager-container"><div class="jsgrid-pager">Pages: <span class="jsgrid-pager-nav-button jsgrid-pager-nav-inactive-button"><a href="javascript:void(0);">First</a></span> <span class="jsgrid-pager-nav-button jsgrid-pager-nav-inactive-button"><a href="javascript:void(0);">Prev</a></span> <span class="jsgrid-pager-page jsgrid-pager-current-page">1</span><span class="jsgrid-pager-page"><a href="javascript:void(0);">2</a></span><span class="jsgrid-pager-page"><a href="javascript:void(0);">3</a></span><span class="jsgrid-pager-page"><a href="javascript:void(0);">4</a></span><span class="jsgrid-pager-page"><a href="javascript:void(0);">5</a></span><span class="jsgrid-pager-nav-button"><a href="javascript:void(0);">...</a></span> <span class="jsgrid-pager-nav-button"><a href="javascript:void(0);">Next</a></span> <span class="jsgrid-pager-nav-button"><a href="javascript:void(0);">Last</a></span> &nbsp;&nbsp; 1 of 10 </div></div><div class="jsgrid-load-shader" style="display: none; position: absolute; inset: 0px; z-index: 1000;"></div><div class="jsgrid-load-panel" style="display: none; position: absolute; top: 50%; left: 50%; z-index: 1000;">Please, wait...</div>*@
+            </div>
+        </div>
+    </div>
+</div>

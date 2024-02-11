@@ -1,0 +1,118 @@
+﻿@{
+    Layout = null;
+}
+<header class="header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/"><img src="~/layout/assets/images/logo/logo.png" alt="BEFIT logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link " href="/">
+                            خانه<span class="sr-only">(current)</span>
+                        </a>
+
+                    </li>
+                    @if (User.Identity.IsAuthenticated == false)
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" asp-action="Register" asp-controller="Account">
+                                ثبت نام<span class="sr-only">(current)</span>
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " asp-action="Login" asp-controller="Account">
+                                ورود<span class="sr-only">(current)</span>
+                            </a>
+
+                        </li>
+                    }
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            مکمل ها<span class="sr-only">(current)</span>
+                        </a>
+                        @*<div class="dropdown-menu animation  slideUpIn">
+                                <a class="dropdown-item" href="shopping.html">shopping</a>
+                                <a class="dropdown-item" href="single-product.html">single product</a>
+                                <a class="dropdown-item" href="shopping-cart.html">shopping cart</a>
+                                <a class="dropdown-item" href="checkout.html">checkout</a>
+                            </div>*@
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            برنامه تمرینی<span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu animation  slideUpIn">
+                            <a class="dropdown-item" asp-action="RequestSchedule" asp-controller="Train">درخواست برنامه جدید</a>
+                            <a class="dropdown-item" asp-action="TrainScheduleList" asp-controller="Train">لیست برنامه ها</a>
+                        </div>
+                    </li>
+
+
+                    @if (User.Identity.IsAuthenticated == true)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link " asp-action="Logout" asp-controller="Account">
+                                خروج<span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+
+                        @inject UserManager<ApplicationUser> userManager
+                        var userapp = await userManager.FindByNameAsync(User.Identity.Name);
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="fa fa-user"></span> @userapp.FirstName @userapp.LastName<span class="sr-only">(current)</span>
+                            </a>
+                            <div class="dropdown-menu animation  slideUpIn">
+                                @if ((await userManager.IsInRoleAsync(userapp, "Admins")) || (await userManager.IsInRoleAsync(userapp, "Trainers")))
+                                {
+                                    <a class="dropdown-item" href="/Admin">پنل مدیریت</a>
+                                }
+                                <a class="dropdown-item" href="#">مشخصات کاربری</a>
+                                <a class="dropdown-item" asp-action="TrainScheduleList" asp-controller="Train">لیست برنامه تمرینی</a>
+                                <a class="dropdown-item" asp-action="Logout" asp-controller="Account">خروج</a>
+                            </div>
+                        </li>
+                    }
+
+                    <li class="nav-item d-none d-lg-inline">
+                        <div class="icon-menu">
+                            <ul>
+                                @if (User.Identity.IsAuthenticated == true)
+                                {
+
+                                    @inject DBBodyBuilding db;
+                                    @inject UserManager<ApplicationUser> userManager
+                                    var userapp = await userManager.FindByNameAsync(User.Identity.Name);
+                                    var totalCartItems = db.Tbl_TrainSchedule.Where(x => x.UserId == userapp.Id && x.isPaid == false).Count();
+
+                                    <li>
+                                        <a asp-action="CartList" asp-controller="Train" class="btn btn-primary">
+                                            <i class="fa fa-shopping-cart"></i>
+                                            @if (totalCartItems > 0)
+                                            {
+                                                <span class="badge badge-light">@totalCartItems</span>
+                                            }
+                                        </a>
+                                    </li>
+                                    <li>|</li>
+                                }
+
+                                <li><a href="#" class="search-btn search-box-btn"><i class="fa fa-search"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

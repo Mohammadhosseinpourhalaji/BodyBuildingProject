@@ -1,0 +1,174 @@
+﻿
+@{
+    Layout = "_LayoutAdmin";
+}
+
+@model UserTrainScheduleViewModel
+@{
+    PersianCalendar pcal = new PersianCalendar();
+    Thread.CurrentThread.CurrentCulture = new CultureInfo("fa-IR");
+}
+<div class="col-12 mb-30">
+    <div class="box">
+        <div class="box-body">
+            <div class="jsgrid" style="position: relative; height: 610px; width: 100%;">
+                <div class="jsgrid-grid-body" style="height: 465px;">
+                    <table class="jsgrid-table">
+                        <thead class="jsgrid-grid-header jsgrid-header-scrollbar">
+                            <tr class="jsgrid-header-row">
+                                <th style="width: 50px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">ای‌دی</th>
+                                <th style="width: 100px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">نام و نام‌خانوادگی</th>
+                                <th style="width: 70px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">نام کاربری</th>
+                                <th style="width: 150px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">تاریخ</th>
+                                <th style="width: 50px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">سن</th>
+                                <th style="width: 70px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">قد</th>
+                                <th style="width: 50px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">وزن</th>
+                                <th style="width: 60px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">دور کمر</th>
+                                <th style="width: 60px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">دور سینه</th>
+                                <th style="width: 60px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">دور مچ</th>
+                                <th style="width: 60px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">دور بازو</th>
+                                <th style="width: 70px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">دور ران پا</th>
+                                <th style="width: 100px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">پرداخت</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                var item = ViewData["RequestApp"] as TrainSchedule;
+                                var scheduleId = item.Id;
+                            }
+                            <tr class="jsgrid-row">
+                                <td style="width: 50px;" class="jsgrid-cell jsgrid-align-right">@item.Id</td>
+                                <td style="width: 100px;" class="jsgrid-cell jsgrid-align-right">@item.User.FirstName @item.User.LastName</td>
+                                <td style="width: 70px;" class="jsgrid-cell jsgrid-align-center">@item.User.UserName</td>
+                                <td style="width: 150px;" class="jsgrid-cell jsgrid-align-center">
+                                    @($"{pcal.GetYear(item.DateAdded)}/{pcal.GetMonth(item.DateAdded).ToString("00")}/{pcal.GetDayOfMonth(item.DateAdded).ToString("00")} - {item.DateAdded.Hour.ToString("00")}:{item.DateAdded.Minute.ToString("00")}")
+                                </td>
+                                <td style="width: 50px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Age</td>
+                                <td style="width: 70px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Height</td>
+                                <td style="width: 50px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Weight</td>
+                                <td style="width: 60px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Waist</td>
+                                <td style="width: 60px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Chest</td>
+                                <td style="width: 60px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Bracer</td>
+                                <td style="width: 60px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Arm</td>
+                                <td style="width: 70px;" class="jsgrid-cell jsgrid-align-center">@item.UserTrainInfo.Thighs</td>
+                                <td style="width: 100px;" class="jsgrid-cell jsgrid-align-center">@item.isPaid</td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@{
+    var trainLst = ViewData["UserTrainScheduleItems"] as List<UserTrainSchedule>;
+}
+
+@if (trainLst.Count > 0)
+{
+    <div class="col-12 mb-30">
+        <div class="box">
+            <div class="box-body">
+                <div class="jsgrid" style="position: relative; height: 610px; width: 100%;">
+                    <div class="jsgrid-grid-body" style="height: 465px;">
+                        <table class="jsgrid-table">
+                            <thead class="jsgrid-grid-header jsgrid-header-scrollbar">
+                                <tr class="jsgrid-header-row">
+                                    <th style="width: 100px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">روز</th>
+                                    <th style="width: 70px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">ساعت</th>
+                                    <th style="width: 100px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable">متن تمرینی</th>
+                                    <th style="width: 30px;" class="jsgrid-header-cell jsgrid-align-center jsgrid-header-sortable"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var trainItems in ViewData["UserTrainScheduleItems"] as List<UserTrainSchedule>)
+                                {
+                                    <tr class="jsgrid-row">
+                                        <td style="width: 100px;" class="jsgrid-cell jsgrid-align-right">@trainItems.DaysOfWeek.Day</td>
+                                        <td style="width: 70px;" class="jsgrid-cell jsgrid-align-center">@trainItems.Time</td>
+                                        <td style="width: 100px;" class="jsgrid-cell jsgrid-align-center">@trainItems.TrainText</td>
+                                        <td style="width: 30px;" class="jsgrid-cell jsgrid-align-center">
+                                            <a class="edit button button-box button-xs button-dark" href="/Admin/ConfirmDeleteUserTrainSchedule/@(item.Id)/@(trainItems.Id)"><i class="zmdi zmdi-delete"></i></a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    $(function () {
+        $("#BtnAddNewRow").on("click", function (e) {
+            e.preventDefault();
+            //alert('hi');
+            $.post('/Admin/AddSchedulePart', function (value) {
+                $('#TrainPart').append(value);
+                $('.DayIdPart').removeAttr('multiple');
+            })
+        })
+
+        $('.DayIdPart').removeAttr('multiple');
+
+        //$('#BtnAddNewRow').click(function () {
+        //    var depId = $(this).val();
+        //    $.post('/Admin/JsLoadCoursesById', { depId: depId }, function (value) {
+        //        $('#JsLoadTable').html(value);
+        //    })
+        //})
+    })
+
+</script>
+<div class="col-lg-12 col-12 mb-30">
+    <div class="box">
+        <div class="box-head">
+            <h4 class="title">افزودن برنامه تمرینی</h4>
+        </div>
+        <div class="box-body">
+            <form asp-action="ConfirmAddTrainSchedule" asp-controller="Admin">
+                <input type="text" value="@scheduleId" name="scheduleId" hidden />
+                <div class="row mbn-20" id="TrainPart">
+
+                    <div class="col-lg-4 col-12 mb-20">
+                        <label>متن تمرین</label>
+                        <input type="text" class="form-control" placeholder="متن تمرین" asp-for="TrainText">
+                    </div>
+                    <div class="col-lg-4 col-12 mb-20">
+                        <label>زمان</label>
+                        <input type="text" class="form-control" placeholder="زمان" asp-for="Time">
+                    </div>
+                    <div class="col-lg-4 col-12 mb-20">
+                        <label>روز هفته</label>
+                        @*<input type="text" class="form-control" placeholder="روز هفته">*@
+                        <select class="form-control DayIdPart" asp-for="DayId">
+                            <option value="0">انتخاب کنید</option>
+                            @foreach (var dayslist in ViewData["Days"] as List<DaysOfWeek>)
+                            {
+                                <option value="@dayslist.Id">@dayslist.Day</option>
+                            }
+                        </select>
+                    </div>
+
+
+                </div>
+                <div class="row col-12 mb-20" style="margin-top: 20px">
+                    <input type="button" id="BtnAddNewRow" value="+" class="button button-primary">
+                </div>
+                <div class="row col-12 mb-20" style="margin-top: 50px">
+                    <input type="submit" value="ارسال" class="button button-primary">
+                    <input type="submit" value="لغو" class="button button-danger">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>

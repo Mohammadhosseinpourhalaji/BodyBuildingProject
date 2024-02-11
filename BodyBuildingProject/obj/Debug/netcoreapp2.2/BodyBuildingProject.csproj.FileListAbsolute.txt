@@ -1,0 +1,170 @@
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.deps.json
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.runtimeconfig.json
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.runtimeconfig.dev.json
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.dll
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.csprojAssemblyReference.cache
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.csproj.CoreCompileInputs.cache
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorAssemblyInfo.cache
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorAssemblyInfo.cs
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.AssemblyInfoInputs.cache
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.AssemblyInfo.cs
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.TagHelpers.input.cache
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.TagHelpers.output.cache
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorCoreGenerate.cache
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorTargetAssemblyInfo.cache
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorTargetAssemblyInfo.cs
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.pdb
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.Views.dll
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.Views.pdb
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.Views.pdb
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.dll
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.pdb
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.csproj.CopyComplete
+C:\Users\Farzam\Documents\Visual Studio 2017\Projects\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.deps.json
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.runtimeconfig.json
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.runtimeconfig.dev.json
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.dll
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.pdb
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.Views.dll
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.Views.pdb
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.csprojAssemblyReference.cache
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorAssemblyInfo.cache
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorAssemblyInfo.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.AssemblyInfoInputs.cache
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.AssemblyInfo.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.TagHelpers.input.cache
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.TagHelpers.output.cache
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorCoreGenerate.cache
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorTargetAssemblyInfo.cache
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorTargetAssemblyInfo.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.Views.pdb
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.dll
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.pdb
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.csproj.CopyComplete
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_HeaderNavbarFixed.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Footer.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutPages.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Train\RequestSchedule.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Train\CartList.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\NewTrainRequestList.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\TrainSetSchedule.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\AddSchedulePart.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Train\TrainScheduleList.cshtml.g.cs
+C:\Users\rasta\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Train\UserTrainSchedule.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.deps.json
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.runtimeconfig.json
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.runtimeconfig.dev.json
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.dll
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.pdb
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.Views.dll
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.Views.pdb
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.csprojAssemblyReference.cache
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorAssemblyInfo.cache
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorAssemblyInfo.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.AssemblyInfoInputs.cache
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.AssemblyInfo.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.TagHelpers.input.cache
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.TagHelpers.output.cache
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorCoreGenerate.cache
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\AddSchedulePart.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\NewTrainRequestList.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\TrainSetSchedule.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Footer.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_HeaderNavbarFixed.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutPages.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Train\CartList.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Train\RequestSchedule.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Train\TrainScheduleList.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Train\UserTrainSchedule.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorTargetAssemblyInfo.cache
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorTargetAssemblyInfo.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.Views.pdb
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.dll
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.pdb
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.csproj.CopyComplete
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\ScheduleTypePriceManagement.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\EditTrainType.cshtml.g.cs
+C:\Users\Farzam\Desktop\Bodybuilding\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\Connected Services\Zarinpal\ConnectedService.json
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\Connected Services\Zarinpal\ConnectedService.json
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.deps.json
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.runtimeconfig.json
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.runtimeconfig.dev.json
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.dll
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.pdb
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.Views.dll
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\bin\Debug\netcoreapp2.2\BodyBuildingProject.Views.pdb
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.csprojAssemblyReference.cache
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.AssemblyInfoInputs.cache
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.AssemblyInfo.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.csproj.CoreCompileInputs.cache
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorAssemblyInfo.cache
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorAssemblyInfo.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.TagHelpers.input.cache
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.TagHelpers.output.cache
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorCoreGenerate.cache
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\AddSchedulePart.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\EditTrainType.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\NewTrainRequestList.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\ScheduleTypePriceManagement.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Admin\TrainSetSchedule.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Footer.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_HeaderNavbarFixed.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutPages.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Train\CartList.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Train\RequestSchedule.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Train\TrainScheduleList.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\Train\UserTrainSchedule.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorTargetAssemblyInfo.cache
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.RazorTargetAssemblyInfo.cs
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.Views.pdb
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.dll
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.pdb
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.genruntimeconfig.cache
+C:\Users\bemuda\Desktop\BodyBuildingProject\BodyBuildingProject\obj\Debug\netcoreapp2.2\BodyBuildingProject.csproj.CopyComplete

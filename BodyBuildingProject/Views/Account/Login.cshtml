@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "_LayoutPages";
+}
+@model LoginViewModel
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+<div class="contact-area ctc-form1 pad90">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <div class="title-bar full-width mb20">
+                        <img src="assets/images/logo/ttl-bar.png" alt="title-img">
+                    </div>
+                    <h3 style="margin-bottom:60px">ورود</h3>
+                </div>
+            </div>
+            <!-- /.col -->
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                @*<div class="booking-schedule">
+                        <ul>
+                            <li><i class="fa fa-calendar"></i>monday to wednesday</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                            <li><i class="fa fa-calendar"></i>monday to wednesday</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                        </ul>
+                    </div>*@
+            </div>
+            <div class="col-md-8">
+                <div class="contact-form ">
+                    <div class="appointment-schedule">
+                        <form asp-action="LoginConfirm" asp-controller="Account" class="appointment-form text-right" dir="rtl">
+
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <input type="text" placeholder="نام کاربری" class="form-control" asp-for="UserName">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <input type="password" placeholder="رمز عبور" class="form-control" asp-for="Password">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <input type="checkbox" style="margin: 0 10px 0 10px" asp-for="RememberMe"><label style="color:black">مرا به خاطر بسپار</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="bttn full-width mt10">
+                                    <button type="submit" class="btn full-width active btn-primary">ورود</button>
+                                </div>
+                            </div>
+                            <!-- /.col -->
+                            <!-- /.row -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col -->
+            <!-- /.col-->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</div>

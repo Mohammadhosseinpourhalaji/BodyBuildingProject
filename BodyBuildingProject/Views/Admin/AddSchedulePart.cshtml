@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+@model UserTrainScheduleViewModel
+<div class="col-lg-4 col-12 mb-20">
+    <label>متن تمرین</label>
+    <input type="text" class="form-control" placeholder="متن تمرین" asp-for="TrainText">
+</div>
+<div class="col-lg-4 col-12 mb-20">
+    <label>زمان</label>
+    <input type="text" class="form-control" placeholder="زمان" asp-for="Time">
+</div>
+<div class="col-lg-4 col-12 mb-20">
+    <label>روز هفته</label>
+    @*<input type="text" class="form-control" placeholder="روز هفته">*@
+    <select class="form-control DayIdPart" asp-for="DayId">
+        <option value="0">انتخاب کنید</option>
+
+        <option value="1">شنبه</option>
+        <option value="2">یکشنبه</option>
+        <option value="3">دوشنبه</option>
+        <option value="4">سه شنبه</option>
+        <option value="5">چهارشنبه</option>
+        <option value="6">پنجشنبه</option>
+        <option value="7">جمعه</option>
+
+    </select>
+</div>

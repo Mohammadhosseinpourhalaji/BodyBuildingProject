@@ -1,0 +1,104 @@
+﻿@{
+    Layout = "_LayoutPages";
+}
+@{
+    PersianCalendar pcal = new PersianCalendar();
+    Thread.CurrentThread.CurrentCulture = new CultureInfo("fa-IR");
+}
+@model List<TrainSchedule>
+
+<div class="contact-area ctc-form1 pad90">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <div class="title-bar full-width mb20">
+                        <img src="assets/images/logo/ttl-bar.png" alt="title-img">
+                    </div>
+                    <h3>لیست برنامه ها</h3>
+                    <p>@*push harder than yesterday if you want a different tommorrow*@ </p>
+                </div>
+            </div>
+            <!-- /.col -->
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                @*<div class="booking-schedule">
+                        <ul>
+                            <li><i class="fa fa-calendar"></i>monday to wednesday</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                            <li><i class="fa fa-calendar"></i>monday to wednesday</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                        </ul>
+                    </div>*@
+            </div>
+
+            <div class="container table-responsive" style="color:black;text-align:right">
+                <form method="post">
+                    <table class="table table-bordered" dir="rtl">
+                        <thead>
+                            <tr class="text-center">
+                                <th>ای‌دی</th>
+                                <th>تاریخ</th>
+                                <th>سن</th>
+                                <th>قد</th>
+                                <th>وزن</th>
+                                <th>دور کمر</th>
+                                <th>دور سینه</th>
+                                <th>دور مچ</th>
+                                <th>دور بازو</th>
+                                <th>دور ران پا</th>
+                                <th>نوع برنامه</th>
+                                <th>وضعیت پرداخت</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Id</td>
+                                    <td>
+                                        @($"{pcal.GetYear(item.DateAdded)}/{pcal.GetMonth(item.DateAdded).ToString("00")}/{pcal.GetDayOfMonth(item.DateAdded).ToString("00")} - {item.DateAdded.Hour.ToString("00")}:{item.DateAdded.Minute.ToString("00")}")
+                                    </td>
+                                    <td>@item.UserTrainInfo.Age</td>
+                                    <td>@item.UserTrainInfo.Height</td>
+                                    <td>@item.UserTrainInfo.Weight</td>
+                                    <td>@item.UserTrainInfo.Waist</td>
+                                    <td>@item.UserTrainInfo.Chest</td>
+                                    <td>@item.UserTrainInfo.Bracer</td>
+                                    <td>@item.UserTrainInfo.Arm</td>
+                                    <td>@item.UserTrainInfo.Thighs</td>
+                                    <td>@item.UserTrainInfo.TrainType.TypeName</td>
+                                    <td class="text-center">
+                                        @if (item.isPaid)
+                                        {
+                                            <span class="badge badge-success" style="font-size:15px; padding: 11px 15px">پرداخت شد</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge badge-dark" style="font-size:15px; padding: 11px 15px">در انتظار پرداخت</span>
+                                        }
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="/Train/UserTrainSchedule/@(item.Id)" type="button" class="btn btn-success">
+                                            جزئیات
+                                        </a>
+                                    </td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </form>
+
+            </div>
+            <!-- /.col -->
+            <!-- /.col-->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</div>

@@ -1,0 +1,63 @@
+﻿@{
+    Layout = "_LayoutPages";
+}
+
+
+<div class="contact-area ctc-form1 pad90">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <div class="title-bar full-width mb20">
+                        <img src="assets/images/logo/ttl-bar.png" alt="title-img">
+                    </div>
+                    <h3>آیتم های برنامه تمرینی</h3>
+                    <p>@*push harder than yesterday if you want a different tommorrow*@ </p>
+                </div>
+            </div>
+            <!-- /.col -->
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                @*<div class="booking-schedule">
+                        <ul>
+                            <li><i class="fa fa-calendar"></i>monday to wednesday</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                            <li><i class="fa fa-calendar"></i>monday to wednesday</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                        </ul>
+                    </div>*@
+            </div>
+            <div class="container" style="color:black;text-align:right">
+                <form method="post">
+                    <table class="table table-bordered" dir="rtl">
+                        <thead>
+                            <tr>
+                                <th>روز</th>
+                                <th>ساعت</th>
+                                <th>متن تمرینی</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var item in ViewData["UserTrainScheduleItems"] as List<UserTrainSchedule>)
+                            {
+                                <tr>
+                                    <td>@item.DaysOfWeek.Day</td>
+                                    <td>@item.Time</td>
+                                    <td>@item.TrainText</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </form>
+
+            </div>
+            <!-- /.col -->
+            <!-- /.col-->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</div>

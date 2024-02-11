@@ -1,0 +1,355 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bodybuilding Project</title>
+    <meta name="author" content="iThemesLab">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="~/layout/assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="~/layout/assets/favicon/apple-icon-57x57.html">
+    <link rel="apple-touch-icon" sizes="72x72" href="~/layout/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="~/layout/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="~/layout/assets/favicon/apple-icon-144x144.png">
+    <!--All Css Here-->
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/bootstrap.min.css">
+    <!--revolution slider-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/rev_slider/settings.css">
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/rev_slider/navigation.css">
+    <!--Font-Awesome Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/font-awesome.min.css">
+    <!--flat-icon-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/flaticon.css">
+    <!--Owl-Carousel Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/owl.carousel.css">
+    <!--Animate Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/animate.css">
+    <!--Animate Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/magnific-popup.css">
+    <!--Jquery Ui Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/vendor/jquery-ui.min.css">
+    <!--Style Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/style.css">
+    <!--Responsive Css-->
+    <link rel="stylesheet" href="~/layout/assets/css/responsive.css">
+    <!--Modernizr Css-->
+    <script src="~/layout/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    @if (TempData["msg"] != null)
+    {
+        <div class="modal" tabindex="-1" role="dialog" id="divModalShowMessage">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" style="color:black">پیام سیستم</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="color:black; text-align:right">
+                        @TempData["msg"]
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                $(divModalShowMessage).modal();
+            })
+        </script>
+    }
+    <!--main-container-->
+    <div class="main-container">
+        <!-- /.header start -->
+        <partial name="~/Views/Shared/_HeaderNavbarFixed.cshtml">
+            <!--header end-->
+            <!-- Slider Area Start Here-->
+            <div class="slider-area1">
+                <div id="rev_slider_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="photography1" style="background-color:transparent;padding:0px;">
+                    <div id="rev_slider_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.0.7">
+                        <ul>
+                            <!-- SLIDE  -->
+                            <li data-index="rs-1" data-transition="slideoververtical">
+                                <!-- MAIN IMAGE -->
+                                <img src="~/layout/assets/images/slider-show/s-2.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                <!-- LAYER NR. 1 -->
+                                <div class="tp-caption slide-text-one tp-resizeme" id="slide-1-layer-1" data-x="['left','center','center','center']" data-hoffset="['155','50','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-100','-145','-60','-100']" data-fontsize="['inherit','20','20','17']" data-lineheight="['60','30','30','26']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:-250px;y:0;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 5; white-space: nowrap; font-family: 'Roboto Condensed', sans-serif">
+                                    <h1>Fit<span>Ness</span></h1>
+                                </div>
+                                <!-- LAYER NR. 2 -->
+                                @*<div class="tp-caption slide-text-two tp-resizeme" id="slide-1-layer-2" data-x="['left','left','center','center']" data-hoffset="['65','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-0','-80','30','0']" data-fontsize="['60','60','60','30']" data-lineheight="['60','60','60','40']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2300;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:-200px;y:0;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap; font-family: 'Roboto Condensed', sans-serif">
+                                    <h1>بدنسازی یک مقصد نیست، یک راه برای زندگیست</h1>
+                                </div>*@
+                                <!-- LAYER NR. 3 -->
+                                @*<div class="tp-caption rev-btn white-btn" id="slide-1-layer-4" data-x="['left','left','center','center']" data-hoffset="['65','0','0','0']" data-y="['middle','middle','bottom','bottom']" data-voffset="['100','160','320','200']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:bottom;s:1200;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-start="1250" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]' data-responsive_offset="on" data-responsive="off" style="z-index: 8; white-space: nowrap; font-size: 18px; line-height: 15px; color: rgba(255, 255, 255, 1.00);font-family:'scirsnsyekan','Roboto Condensed', sans-serif;text-transform: uppercase;">
+                                    ثبت نام
+                                </div>*@
+                            </li>
+                            <!-- SLIDE  2-->
+                            <li data-index="rs-2" data-transition="slideoververtical">
+                                <!-- MAIN IMAGE -->
+                                <img src="~/layout/assets/images/slider-show/s-1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                <!-- LAYER NR. 1 -->
+                                <div class="tp-caption slide-text-one tp-resizeme" id="slide-2-layer-1" data-x="['right','center','center','center']" data-hoffset="['65','50','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-100','-145','-60','-100']" data-fontsize="['inherit','20','20','17']" data-lineheight="['60','30','30','26']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:right;y:0;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 5; white-space: nowrap; font-family: 'Roboto Condensed', sans-serif">
+                                    <h1>NEVER <span>Give Up</span></h1>
+                                </div>
+                                <!-- LAYER NR. 2 -->
+                                @*<div class="tp-caption slide-text-two tp-resizeme" id="slide-2-layer-2" data-x="['right','left','center','center']" data-hoffset="['65','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-0','-80','30','0']" data-fontsize="['60','60','60','30']" data-lineheight="['60','60','60','40']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2300;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:right;y:0;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap; font-family: 'Roboto Condensed', sans-serif">
+                                    <h1>fitness is not a destination it is a way of life</h1>
+                                </div>*@
+                                <!-- LAYER NR. 3 -->
+                                @*<div class="tp-caption rev-btn white-btn" id="slide-2-layer-4" data-x="['right','left','center','center']" data-hoffset="['65','0','0','0']" data-y="['middle','middle','bottom','bottom']" data-voffset="['100','160','320','200']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:bottom;s:1000;e:Power4.easeInOut;" data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1200;e:Power2.easeInOut;" data-start="1250" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]' data-responsive_offset="on" data-responsive="off" style="z-index: 8; white-space: nowrap; font-size: 18px; line-height: 15px; color: rgba(255, 255, 255, 1.00);font-family:'scirsnsyekan','Roboto Condensed', sans-serif;text-transform: uppercase;">
+                                    learn more
+                                </div>*@
+                            </li>
+                            <!-- SLIDE  3-->
+                            <li data-index="rs-3" data-transition="slideoververtical">
+                                <!-- MAIN IMAGE -->
+                                <img src="~/layout/assets/images/slider-show/s-6.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                <!-- LAYER NR. 1 -->
+                                <div class="tp-caption slide-text-one tp-resizeme" id="slide-3-layer-1" data-x="['left','center','center','center']" data-hoffset="['65','100','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-100','-145','-60','-100']" data-fontsize="['inherit','20','20','17']" data-lineheight="['60','30','30','26']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:-250px;y:0;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 5; white-space: nowrap; font-family: 'Roboto Condensed', sans-serif">
+                                    <h1>Train <span>Hard</span></h1>
+                                </div>
+                                <!-- LAYER NR. 2 -->
+                                @*<div class="tp-caption slide-text-two tp-resizeme" id="slide-3-layer-2" data-x="['left','left','center','center']" data-hoffset="['65','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-0','-80','30','0']" data-fontsize="['60','60','60','30']" data-lineheight="['60','60','60','40']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2300;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:-200px;y:0;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap; font-family: 'Roboto Condensed', sans-serif">
+                                    <h1>هیچوقت آسان نمیشوند، تنها شما قدرتمند تر میشوید</h1>
+                                </div>*@
+                                <!-- LAYER NR. 3 -->
+                                @*<div class="tp-caption rev-btn white-btn" id="slide-3-layer-4" data-x="['left','left','center','center']" data-hoffset="['65','0','0','0']" data-y="['middle','middle','bottom','bottom']" data-voffset="['100','160','320','200']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:bottom;s:1000;e:Power4.easeInOut;" data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1200;e:Power2.easeInOut;" data-start="1250" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]' data-responsive_offset="on" data-responsive="off" style="z-index: 8; white-space: nowrap; font-size: 18px; line-height: 15px; color: rgba(255, 255, 255, 1.00);font-family:'scirsnsyekan','Roboto Condensed', sans-serif;text-transform: uppercase;">
+                                    بیشتر بدانید
+                                </div>*@
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--#rev_slider_1_wrapper-->
+            </div>
+            <!-- Slider Area End Here-->
+            <!--features-area start-->
+            <div class="features-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="features-body">
+                                <div class="features-box text-center">
+                                    <div class="features-elements">
+                                        <a href="#"><i class="fa fa flaticon-exercise"></i></a>
+                                        <h4 class="mb20">بدنسازی</h4>
+                                        <p class="mb20">بدنسازی استفاده هوشمندانه از تمرین های استقامتی و سرعتی، جهت کنترل و توسعه سیستم عضلانی یک فرد می باشد.</p>
+                                    </div>
+                                    <div class="features-box-img ">
+                                        <a class="primary-overlay"><img src="~/layout/assets/images/feature/1.jpg" alt="feature img"></a>
+                                    </div>
+                                </div>
+                                <div class="features-box text-center">
+                                    <div class="features-elements">
+                                        <a href="#"><i class="fa fa flaticon-weightlifting"></i></a>
+                                        <h4 class="mb20">فیتنس</h4>
+                                        <p class="mb20">یک تمرین فیتنس باید ضمن توجه به عضله سازی و چربی سوزی، آمادگی جسمانی عمومی شما را در همه ابعاد بهبود بخشد.</p>
+                                    </div>
+                                    <div class="features-box-img">
+                                        <a class="primary-overlay"><img src="~/layout/assets/images/feature/2.jpg" alt="feature img"></a>
+                                    </div>
+                                </div>
+                                <div class="features-box text-center">
+                                    <div class="features-elements">
+                                        <a href="#"><i class="fa fa flaticon-dumbbell"></i></a>
+                                        <h4 class="mb20">حجم</h4>
+                                        <p class="mb20">اگر می خواهید مقداری عضله به بدن تان اضافه کنید، هیچ راهی سریعتر از یک دوره حجم در بدنسازی و رژیم غذایی دوره حجم نیست. </p>
+                                    </div>
+                                    <div class="features-box-img ">
+                                        <a class="primary-overlay"><img src="~/layout/assets/images/feature/3.jpg" alt="feature img"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <div class="portfolio-area title-white bg1 parallax overlay pad90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title text-center">
+                                @*<div class="title-bar full-width mb20">
+                                    <img src="~/layout/assets/images/logo/ttl-bar.png" alt="title-img">
+                                </div>*@
+                                <h3>کلاس های تمرین</h3>
+                                <p>ورزش یا تمرینات فیزیکی سلامت شما را افزایش میدهد</p>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+                <div class="port-carousel port-zoom">
+                    <div class="port-box primary-overlay">
+                        <div class="port-img">
+                            <a href="~/layout/assets/images/class-schedule/6.jpg">
+                                <img src="~/layout/assets/images/class-schedule/6-1.jpg" alt="schedule img"><i class="ovrlay fa fa-search"></i>
+                            </a>
+                        </div>
+                        <div class="port-dtl">
+                        </div>
+                    </div>
+                    <div class="port-box primary-overlay">
+                        <div class="port-img">
+                            <a href="~/layout/assets/images/class-schedule/10.jpg">
+                                <img src="~/layout/assets/images/class-schedule/10-1.jpg" alt="schedule img"><i class="ovrlay fa fa-search"></i>
+                            </a>
+                        </div>
+                        <div class="port-dtl">
+                        </div>
+                    </div>
+                    <div class="port-box primary-overlay">
+                        <div class="port-img">
+                            <a href="~/layout/assets/images/class-schedule/9.jpg">
+                                <img src="~/layout/assets/images/class-schedule/9-1.jpg" alt="schedule img"><i class="ovrlay fa fa-search"></i>
+                            </a>
+                        </div>
+                        <div class="port-dtl">
+                        </div>
+                    </div>
+                    <div class="port-box primary-overlay">
+                        <div class="port-img">
+                            <a href="~/layout/assets/images/class-schedule/big4.jpg">
+                                <img src="~/layout/assets/images/class-schedule/4.jpg" alt="schedule img"><i class="ovrlay fa fa-search"></i>
+                            </a>
+                        </div>
+                        <div class="port-dtl">
+                        </div>
+                    </div>
+                </div>
+                <!-- /.port carousel -->
+            </div>
+            <!--portfolio area end-->
+            <!--about-trainers start-->
+            <div class="trainers-area expert-trainer wht-txt pad90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title text-center">
+                                <div class="title-bar full-width mb20">
+                                    <img src="~/layout/assets/images/logo/ttl-bar.png" alt="title-img">
+                                </div>
+                                <h3>مربیان ما</h3>
+                                <p>بدنسازی = حجم ایده‌آل</p>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="trainer-pro mt20">
+                                <div class="trainer-img">
+                                    <img src="~/layout/assets/images/team/6-1.jpg" alt="trainer-img">
+                                </div>
+                                <div class="trainer-bio">
+                                    <h4>اکبر سرباز</h4>
+                                    <p>مربی فیزیک</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="trainer-pro mt20">
+                                <div class="trainer-img">
+                                    <img src="~/layout/assets/images/team/11-1.jpg" alt="trainer-img">
+                                </div>
+                                <div class="trainer-bio">
+                                    <h4>محسن صمدی</h4>
+                                    <p>مربی بدنسازی</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <partial name="~/Views/Shared/_Footer.cshtml">
+    </div>
+    <!--main-container-->
+    <!--Search Popup-->
+    <div id="search-popup" class="search-popup">
+        <div class="close-search theme-btn"><span class="fa fa-close"></span></div>
+        <div class="popup-inner">
+            <div class="search-form">
+                <form method="post">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required>
+                            <input type="submit" value="Search" class="theme-btn">
+                        </fieldset>
+                    </div>
+                </form>
+                <br>
+                <h3>Recent Search Keywords</h3>
+            </div>
+        </div>
+    </div>
+    <!--End Search Popup-->
+    <!--All Js Here-->
+    <!-- jquery latest version -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="~/layout/assets/js/vendor/jquery-3.2.1.min.js"></script>
+    <!--Migrate Js-->
+    <script src="~/layout/assets/js/vendor/jquery-migrate.js"></script>
+    <!--Popper Js-->
+    <script src="~/layout/assets/js/vendor/popper-1.12.3.min.js"></script>
+    <!--Bootstrap Js-->
+    <script src="~/layout/assets/js/vendor/bootstrap.min.js"></script>
+    <!--Owl-Carousel Js-->
+    <script src="~/layout/assets/js/vendor/owl.carousel.min.js"></script>
+    <!--counter Js-->
+    <script src="~/layout/assets/js/vendor/jquery.counterup.min.js"></script>
+    <script src="~/layout/assets/js/vendor/waypoints-jquery.js"></script>
+    <!--Isotop Js-->
+    <script src="~/layout/assets/js/vendor/isotope.pkgd.min.js"></script>
+    <!-- revolution slider js files start -->
+    <script src="~/layout/assets/js/vendor/rev_slider/jquery.themepunch.tools.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.actions.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.migration.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="~/layout/assets/js/vendor/rev_slider/extensions/revolution.extension.video.min.js"></script>
+    <!-- revolution slider js files end -->
+    <!--magnific popup Js-->
+    <script src="~/layout/assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <!--scrollUp js-->
+    <script src="~/layout/assets/js/vendor/jquery.scrollUp.js"></script>
+    <!--Jquery Ui Js-->
+    <script src="~/layout/assets/js/vendor/jquery-ui.min.js"></script>
+    <!--Wow Js-->
+    <script src="~/layout/assets/js/vendor/wow.min.js"></script>
+    <!-- template main js file -->
+    <script src="~/layout/assets/js/main.js"></script>
+</body>
+</html>

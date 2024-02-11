@@ -1,0 +1,105 @@
+﻿@{ 
+    Layout = "_LayoutPages";
+}
+@model RegisterViewModel
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+<div class="contact-area ctc-form1 pad90">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center">
+                    <div class="title-bar full-width mb20">
+                        <img src="assets/images/logo/ttl-bar.png" alt="title-img">
+                    </div>
+                    <h3>ثبت نام</h3>
+                    <p>
+                    </p>
+                </div>
+            </div>
+            <!-- /.col -->
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                @*<div class="booking-schedule">
+                        <ul>
+                            <li><i class="fa fa-calendar"></i>monday to wednesday</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                            <li><i class="fa fa-calendar"></i>monday to wednesday</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                            <li><i class="fa fa-clock-o"></i>07.00am -- 10.00pm</li>
+                        </ul>
+                    </div>*@
+            </div>
+            <style>
+                .field-validation-error{
+                    color:red;
+                }
+            </style>
+            <div class="col-md-8">
+                <div class="contact-form ">
+                    <div class="appointment-schedule">
+                        <form asp-action="RegisterConfirm" asp-controller="Account" class="appointment-form text-right" dir="rtl">
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <input type="text" placeholder="نام" class="form-control" asp-for="FirstName">
+                                    <span asp-validation-for="FirstName"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <input type="text" placeholder="نام خانوادگی" class="form-control" asp-for="LastName">
+                                    <span asp-validation-for="LastName"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <input type="text" placeholder="نام کاربری" class="form-control" asp-for="UserName">
+                                    <span asp-validation-for="UserName"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <input type="text" placeholder="ایمیل" class="form-control" asp-for="Email">
+                                    <span asp-validation-for="Email"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <input type="password" placeholder="پسورد" class="form-control" asp-for="Password">
+                                    <span asp-validation-for="Password"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <input type="password" placeholder="تکرار پسورد" class="form-control" asp-for="ConfirmPassword">
+                                    <span asp-validation-for="ConfirmPassword"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mt10">
+                                    <input type="text" placeholder="شماره موبایل" class="form-control" asp-for="PhoneNumber">
+                                    <span asp-validation-for="PhoneNumber"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <div class="bttn full-width mt10">
+                                    <button type="submit" class="btn full-width active btn-primary">ثبت نام</button>
+                                </div>
+                            </div>
+                            <!-- /.col -->
+                            <!-- /.row -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col -->
+            <!-- /.col-->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</div>
